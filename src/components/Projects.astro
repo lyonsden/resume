@@ -1,0 +1,84 @@
+---
+const projects = [
+  {
+    title: 'Open-Source Terraform Module',
+    description: 'Published a production-grade Terraform module to the State Farm GitHub repository for industry-wide consumption, enabling standardized infrastructure provisioning.',
+    tags: ['Terraform', 'IaC', 'Open Source'],
+  },
+  {
+    title: 'Cross-Platform Event Monitoring',
+    description: 'Developed an event-based monitoring solution spanning AWS and TP2 platforms using Terraform and Python, providing real-time observability across heterogeneous environments.',
+    tags: ['Python', 'AWS', 'Event-Driven', 'Observability'],
+  },
+  {
+    title: 'Claims API Ecosystem',
+    description: 'Established and championed the Claims API Ecosystem, introducing governance, best practices, and an industry-standard rules engine for authorization and eligibility.',
+    tags: ['API Design', 'Node.js', 'Governance', 'Rules Engine'],
+  },
+  {
+    title: 'SSL Lambda Layer',
+    description: 'Contributed the SSL Lambda Layer to PCAT for enterprise consumption, streamlining SSL certificate management across AWS Lambda functions.',
+    tags: ['AWS Lambda', 'Security', 'Enterprise'],
+  },
+];
+---
+
+<section class="section projects" id="projects">
+  <div class="container">
+    <h2 class="section-title">Notable Projects</h2>
+    <div class="projects-grid">
+      {projects.map((p) => (
+        <div class="project-card">
+          <h3 class="project-title">{p.title}</h3>
+          <p class="project-description">{p.description}</p>
+          <div class="project-tags">
+            {p.tags.map((t) => <span class="badge">{t}</span>)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+
+  .project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: border-color var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .project-card:hover {
+    border-color: var(--border-accent);
+    transform: translateY(-2px);
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .project-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+</style>
