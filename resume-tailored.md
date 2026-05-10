@@ -1,6 +1,6 @@
 # Michael Lyons
 **Staff Technology Engineer | Enterprise Platforms & Cloud-Native Systems**
-Lawrenceville, GA | https://s.f/lyons-blog
+Lawrenceville, GA
 
 ---
 
