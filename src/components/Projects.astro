@@ -1,13 +1,24 @@
 ---
 const projects = [
   {
+    title: 'AI-Powered Code Review & MR Orchestration',
+    description: 'Built an event-driven platform (SQS/DynamoDB/ECS-Fargate/Bedrock) that provides automatic merge request summarization, on-demand code review, and orchestrates codebase-wide changes across 2,000+ repos. Engineers request reviews or bulk updates via MR; the system generates complete merge requests for team review.',
+    tags: ['Bedrock', 'Claude 4.6', 'Event-Driven', 'ECS/Fargate', 'SQS', 'DynamoDB'],
+  },
+  {
+    title: 'Enterprise Copilot Customizations',
+    description: 'Forked the public awesome-copilot repository for internal Claims use, rapidly adopted enterprise-wide. Published internal Copilot customizations for API Standards, Well-Architected patterns, and a manager prompt that auto-installs relevant customizations based on the engineer\'s current project. Over 20 contributors have shared customizations through this project.',
+    tags: ['GitHub Copilot', 'AI-Assisted Development', 'Internal Platform'],
+  },
+  {
     title: 'Open-Source Terraform Module',
-    description: 'Published a production-grade Terraform module to the State Farm GitHub repository for industry-wide consumption, enabling standardized infrastructure provisioning.',
+    description: 'Published a production-grade Terraform module to the StateFarmIns GitHub organization for industry-wide adoption, enabling standardized infrastructure provisioning.',
+    url: 'https://github.com/StateFarmIns/terraform-aws-ip-address-release',
     tags: ['Terraform', 'IaC', 'Open Source'],
   },
   {
     title: 'Cross-Platform Event Monitoring',
-    description: 'Developed an event-based monitoring solution spanning AWS and TP2 platforms using Terraform and Python, providing real-time observability across heterogeneous environments.',
+    description: 'Developed an event-based monitoring solution spanning AWS and internal cloud platforms using Terraform and Python, providing real-time observability across heterogeneous environments.',
     tags: ['Python', 'AWS', 'Event-Driven', 'Observability'],
   },
   {
@@ -17,7 +28,7 @@ const projects = [
   },
   {
     title: 'SSL Lambda Layer',
-    description: 'Contributed the SSL Lambda Layer to PCAT for enterprise consumption, streamlining SSL certificate management across AWS Lambda functions.',
+    description: 'Contributed the SSL Lambda Layer to the enterprise cloud adoption team for organization-wide consumption, streamlining SSL certificate management across AWS Lambda functions.',
     tags: ['AWS Lambda', 'Security', 'Enterprise'],
   },
 ];
@@ -29,7 +40,9 @@ const projects = [
     <div class="projects-grid">
       {projects.map((p) => (
         <div class="project-card">
-          <h3 class="project-title">{p.title}</h3>
+          <h3 class="project-title">
+            {p.url ? <a href={p.url} target="_blank" rel="noopener">{p.title} ↗</a> : p.title}
+          </h3>
           <p class="project-description">{p.description}</p>
           <div class="project-tags">
             {p.tags.map((t) => <span class="badge">{t}</span>)}
@@ -67,6 +80,14 @@ const projects = [
     font-size: 1.15rem;
     font-weight: 700;
     color: var(--text-primary);
+  }
+
+  .project-title a {
+    color: var(--text-primary);
+  }
+
+  .project-title a:hover {
+    color: var(--text-accent);
   }
 
   .project-description {
