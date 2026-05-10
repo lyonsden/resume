@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://shadetreegeek.com',
-  base: './',
+  base: '/',
   outDir: './docs',
   output: 'static',
 });
