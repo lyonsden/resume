@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Lyons | Staff Technology Engineer</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+:root{--color-launch-green:#7BB342;--color-launch-green-dim:#5a8a2e;--color-forest-green:#2D5016;--color-midnight-black:#1A1A1A;--color-la-silver:#B8B8B8;--color-la-silver-light:#D0D0D0;--bg-primary:#121212;--bg-secondary:#181818;--bg-tertiary:#1F1F1F;--bg-card:#1A1A1A;--bg-card-hover:#222;--text-primary:#EDEDED;--text-secondary:#999;--text-muted:#666;--text-accent:var(--color-launch-green);--border-color:#2A2A2A;--border-accent:var(--color-launch-green);--radius-sm:4px;--radius-md:6px;--radius-lg:10px;--font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--font-mono:"JetBrains Mono","Fira Code","Consolas",monospace;--transition-fast:.15s ease;--transition-normal:.25s ease}[data-theme=light]{--bg-primary:#F8F8F8;--bg-secondary:#FFF;--bg-tertiary:#F0F0F0;--bg-card:#FFF;--bg-card-hover:#F5F5F5;--text-primary:#1A1A1A;--text-secondary:#333;--text-muted:#555;--text-accent:var(--color-forest-green);--border-color:#E0E0E0;--border-accent:var(--color-forest-green)}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;font-size:16px}body{font-family:var(--font-sans);background-color:var(--bg-primary);color:var(--text-primary);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}a{color:var(--text-accent);text-decoration:none;transition:color var(--transition-fast)}a:hover{color:var(--color-launch-green-dim)}.container{max-width:960px;margin:0 auto;padding:0 32px}@media(max-width:640px){.container{padding:0 20px}}.section{padding:100px 0}.section-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--text-muted);margin-bottom:16px}.section-title{font-size:2.5rem;font-weight:700;letter-spacing:-.5px;margin-bottom:48px;color:var(--text-primary);line-height:1.15}@media(max-width:640px){.section-title{font-size:1.75rem}}.badge{display:inline-flex;align-items:center;padding:5px 14px;background:var(--bg-tertiary);color:var(--text-accent);border:1px solid var(--border-color);border-radius:100px;font-size:.78rem;font-weight:500;font-family:var(--font-mono);transition:border-color var(--transition-fast)}.hr{height:1px;background:var(--border-color);border:none;margin:80px 0;max-width:480px}.header{position:fixed;top:0;left:0;right:0;z-index:100;background:color-mix(in srgb,var(--bg-primary) 80%,transparent);border-bottom:1px solid var(--border-color);backdrop-filter:blur(16px)}.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:960px;margin:0 auto;padding:0 32px}.logo{font-size:1.25rem;font-weight:800;color:var(--text-primary);letter-spacing:-.5px}.nav{display:flex;align-items:center;gap:32px}.nav-link{color:var(--text-secondary);font-size:.85rem;font-weight:500;transition:color var(--transition-fast)}.nav-link:hover{color:var(--text-primary)}.theme-toggle{background:none;border:none;cursor:pointer;color:var(--text-secondary);padding:8px;border-radius:var(--radius-sm);display:flex;align-items:center;transition:color var(--transition-fast),background var(--transition-fast)}.theme-toggle:hover{color:var(--text-primary);background:var(--bg-tertiary)}.icon-sun,.icon-moon{display:none}[data-theme=dark] .icon-sun,[data-theme=light] .icon-moon{display:block}@media(max-width:640px){.nav{gap:16px}.nav-link{display:none}}.hero{min-height:100vh;display:flex;align-items:center;padding-top:64px;position:relative;overflow:hidden}.hero::before{content:"";position:absolute;top:-40%;right:-15%;width:800px;height:800px;background:radial-gradient(circle,rgba(123,179,66,.06) 0%,transparent 60%);pointer-events:none}.hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--border-color),transparent)}.hero-greeting{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--text-accent);margin-bottom:24px}.hero-name{font-size:clamp(2.75rem,7vw,5rem);font-weight:800;line-height:1.05;letter-spacing:-2px;margin-bottom:20px;color:var(--text-primary)}.hero-title{font-size:clamp(1.1rem,2.5vw,1.5rem);font-weight:400;color:var(--text-secondary);margin-bottom:32px;letter-spacing:-.3px}.hero-description{font-size:1.05rem;color:var(--text-secondary);max-width:520px;margin-bottom:40px;line-height:1.7}.hero-actions{display:flex;gap:16px}.btn{display:inline-flex;align-items:center;padding:14px 32px;border-radius:var(--radius-md);font-size:.9rem;font-weight:600;cursor:pointer;transition:all var(--transition-fast)}.btn-primary{background:var(--color-launch-green);color:#000;border:2px solid var(--color-launch-green)}.btn-primary:hover{background:var(--color-launch-green-dim);border-color:var(--color-launch-green-dim);color:#000}@media(max-width:640px){.hero-actions{flex-direction:column}.btn{justify-content:center}}.timeline{position:relative;padding-left:28px}.timeline::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1px;background:var(--border-color)}.timeline-item{position:relative;padding-bottom:64px}.timeline-item:last-child{padding-bottom:0}.timeline-item::before{content:"";position:absolute;left:-32px;top:6px;width:7px;height:7px;border-radius:50%;background:var(--color-launch-green);border:2px solid var(--bg-primary)}.timeline-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;flex-wrap:wrap;gap:8px}.timeline-role{font-size:1.2rem;font-weight:700;color:var(--text-primary);margin-bottom:2px}.timeline-company{color:var(--text-secondary);font-size:.9rem}.timeline-period{color:var(--text-muted);font-family:var(--font-mono);font-size:.8rem;white-space:nowrap;padding-top:2px}.timeline-summary{color:var(--text-secondary);font-style:italic;font-size:.95rem;margin-bottom:20px}.timeline-highlights{list-style:none}.timeline-highlights li{position:relative;padding-left:20px;padding-bottom:12px;color:var(--text-secondary);font-size:.95rem;line-height:1.6}.timeline-highlights li:last-child{padding-bottom:0}.timeline-highlights li::before{content:"▸";position:absolute;left:0;color:var(--color-launch-green);font-size:.8rem}.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-bottom:48px}.skill-card{background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:24px;transition:border-color var(--transition-fast)}.skill-card:hover{border-color:var(--border-accent)}.skill-category{font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:16px}.skill-tags{display:flex;flex-wrap:wrap;gap:8px}.skill-card .badge{padding:4px 12px;font-size:.75rem}.skill-card .badge:hover{border-color:var(--text-accent)}.certifications{padding:32px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md)}.cert-title{font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text-muted);margin-bottom:16px}.cert-badges{display:flex;flex-wrap:wrap;gap:8px}.badge-cert{background:transparent;border-color:var(--color-launch-green);color:var(--color-launch-green)}.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}.project-card{background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md);padding:28px;display:flex;flex-direction:column;gap:16px;transition:border-color var(--transition-fast)}.project-card:hover{border-color:var(--border-accent)}.project-title{font-size:1.1rem;font-weight:700;color:var(--text-primary);letter-spacing:-.3px}.project-title a{color:var(--text-primary)}.project-title a:hover{color:var(--text-accent)}.project-description{color:var(--text-secondary);font-size:.92rem;line-height:1.65;flex-grow:1}.project-tags{display:flex;flex-wrap:wrap;gap:6px}.project-tags .badge{font-size:.72rem;padding:4px 10px}.footer{padding:48px 0;border-top:1px solid var(--border-color)}.footer-content{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px}.footer-name{font-size:1rem;font-weight:700;color:var(--text-primary)}.footer-role{color:var(--text-secondary);font-size:.85rem}.footer-copy{color:var(--text-muted);font-size:.8rem}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a href="#top" class="logo">ML</a>
+    <nav class="nav">
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="top">
+  <div class="container">
+    <p class="hero-greeting">Staff Technology Engineer</p>
+    <h1 class="hero-name">Michael Lyons</h1>
+    <p class="hero-description">Designing and operating enterprise platforms at scale — from legacy to cloud-native to AI-first. AWS, infrastructure automation, event-driven systems, SRE, and LLM-driven platform engineering.</p>
+    <div class="hero-actions">
+      <a href="#experience" class="btn btn-primary">View Experience</a>
+    </div>
+  </div>
+</section>
+<section class="section" id="experience">
+  <div class="container">
+    <p class="section-label">Career</p>
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div><h3 class="timeline-role">Staff Technology Engineer</h3><p class="timeline-company">State Farm · Atlanta, GA</p></div>
+          <span class="timeline-period">Aug 2024 – Present</span>
+        </div>
+        <ul class="timeline-highlights">
+          <li>Built an event-driven platform (SQS/DynamoDB/ECS-Fargate/Bedrock) providing automatic merge request summarization, on-demand code review, and codebase-wide change orchestration across 2,000+ repositories using Claude</li>
+          <li>Forked the public awesome-copilot repository for internal Claims use, rapidly adopted enterprise-wide. Published Copilot customizations for API Standards, Well-Architected patterns, and a manager prompt that auto-installs customizations based on the engineer's current project. Over 20 contributors have shared customizations</li>
+          <li>Established team expectations and architectural standards for multi-region AWS deployments across the Claims organization</li>
+          <li>Created, piloted, and released a production-grade Terraform module for enterprise consumption; published an open-source module for industry-wide adoption</li>
+          <li>Coordinated organization-wide migration to SCALR (Terraform management platform), aligning multiple product teams and reducing operational overhead</li>
+          <li>Regularly mentor lead engineers; participated on the P7 Software Engineer and P7 Infrastructure Engineer Promotion boards</li>
+          <li>Presented at the 2022 and 2023 Resiliency Summits and other technical venues</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div><h3 class="timeline-role">Senior Technology Engineer – ET Claims SRE</h3><p class="timeline-company">State Farm · Atlanta, GA</p></div>
+          <span class="timeline-period">Oct 2021 – Aug 2024</span>
+        </div>
+        <ul class="timeline-highlights">
+          <li>SRE engineering with focus on AWS platform reliability, observability, and incident response for the Claims organization</li>
+          <li>Coordinated production implementation across multiple teams for initial go-live rollout</li>
+          <li>Coached teams on AWS, Git, and product-team best practices</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div><h3 class="timeline-role">Technology Engineer – SRE Engineering</h3><p class="timeline-company">State Farm · Atlanta, GA</p></div>
+          <span class="timeline-period">Jan 2021 – Oct 2021</span>
+        </div>
+        <ul class="timeline-highlights">
+          <li>Transitioned into SRE engineering, applying site reliability principles to Claims platform operations</li>
+          <li>Established foundational monitoring, alerting, and incident response processes for AWS-based services</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div><h3 class="timeline-role">Lead Developer – Team Insomnia</h3><p class="timeline-company">State Farm · Atlanta, GA</p></div>
+          <span class="timeline-period">Mar 2020 – Jan 2021</span>
+        </div>
+        <ul class="timeline-highlights">
+          <li>Developed a cross-platform event-based monitoring solution using Terraform and Python, enabling real-time observability across heterogeneous environments</li>
+          <li>Implemented GitOps and Terraform Enterprise for production deployment pipelines</li>
+          <li>Developed CloudWatch queries for monitoring and reporting needs</li>
+          <li>Coached teams on AWS, Git, and product-team best practices</li>
+          <li>Coordinated production implementation across multiple teams for initial go-live rollout</li>
+          <li>Led Hack Day ATL events (2020, 2021) and piloted AWS Deep Racer as additional volunteer initiatives</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div><h3 class="timeline-role">Software Developer Technical Lead – Digital Claims</h3><p class="timeline-company">State Farm · Atlanta, GA</p></div>
+          <span class="timeline-period">Jul 2018 – Jan 2021</span>
+        </div>
+        <ul class="timeline-highlights">
+          <li>Established and championed the Claims API Ecosystem, communicating methodologies to peers and leadership</li>
+          <li>Introduced an industry-standard rules engine for authorization and eligibility automation</li>
+          <li>Architected, developed, and implemented APIs within the Claims API Ecosystem</li>
+          <li>Created governance regarding API Best Practices across Claims and the Systems Organization</li>
+          <li>Migrated a high-traffic legacy Java API to a Node.js AWS API backed by DynamoDB</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <div><h3 class="timeline-role">Technical Architect</h3><p class="timeline-company">State Farm · Bloomington/Normal, IL</p></div>
+          <span class="timeline-period">May 2001 – Jul 2018</span>
+        </div>
+        <p class="timeline-summary">Over a 17-year tenure, progressed through increasingly complex architecture and engineering roles across multiple platforms and business domains:</p>
+        <ul class="timeline-highlights">
+          <li>Solution Architect – Customer Communications: Designed and implemented an on-demand customer communications solution, increasing efficiency and integration speed</li>
+          <li>Implemented a self-service, cookbook-style documentation system to empower consumers and reduce integration friction</li>
+          <li>Lead Developer – Digital Claims (2016–2018): Established the Claims API Ecosystem, introduced industry-standard rules engine for authorization and eligibility automation</li>
+          <li>Designed and delivered enterprise solutions across mainframe, WAS, and emerging cloud platforms throughout tenure</li>
+          <li>Built integration patterns for cross-platform data exchange, established development standards, and mentored engineering teams through technology transitions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="skills">
+  <div class="container">
+    <p class="section-label">Expertise</p>
+    <h2 class="section-title">Skills &amp; Certifications</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><h3 class="skill-category">Cloud &amp; Infrastructure</h3><div class="skill-tags"><span class="badge">AWS (Lambda, SQS, ECS/Fargate, RDS, DynamoDB)</span><span class="badge">Multi-region Architecture</span><span class="badge">Event-Driven Systems</span><span class="badge">Terraform / TFE / Scalr</span><span class="badge">Docker</span><span class="badge">HashiCorp Vault</span></div></div>
+      <div class="skill-card"><h3 class="skill-category">Languages</h3><div class="skill-tags"><span class="badge">Python</span><span class="badge">Node.js</span><span class="badge">Java</span><span class="badge">Go</span></div></div>
+      <div class="skill-card"><h3 class="skill-category">AI &amp; LLM Engineering</h3><div class="skill-tags"><span class="badge">AWS Bedrock</span><span class="badge">Claude</span><span class="badge">LLM Workflows</span><span class="badge">GitHub Copilot</span><span class="badge">AI-Orchestrated Automation</span></div></div>
+      <div class="skill-card"><h3 class="skill-category">Platforms &amp; Tools</h3><div class="skill-tags"><span class="badge">GitLab CI</span><span class="badge">Jenkins</span><span class="badge">GitOps</span><span class="badge">CloudWatch</span><span class="badge">X-Ray</span><span class="badge">Dynatrace</span></div></div>
+      <div class="skill-card"><h3 class="skill-category">Practices</h3><div class="skill-tags"><span class="badge">SRE &amp; Resiliency</span><span class="badge">DevSecOps</span><span class="badge">Infrastructure as Code</span><span class="badge">API Governance</span><span class="badge">Technical Leadership</span><span class="badge">AI-First Engineering</span></div></div>
+    </div>
+    <div class="certifications">
+      <h3 class="cert-title">Certifications</h3>
+      <div class="cert-badges"><span class="badge badge-cert">AWS Cloud Practitioner</span><span class="badge badge-cert">Chartered Financial Consultant (ChFC)</span></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="projects">
+  <div class="container">
+    <p class="section-label">Work</p>
+    <h2 class="section-title">Notable Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3 class="project-title"><a href="https://github.com/StateFarmIns/terraform-aws-ip-address-release" target="_blank" rel="noopener">Open-Source Terraform Module ↗</a></h3>
+        <p class="project-description">Published a production-grade Terraform module to the StateFarmIns GitHub organization for industry-wide adoption, enabling standardized infrastructure provisioning.</p>
+        <div class="project-tags"><span class="badge">Terraform</span><span class="badge">IaC</span><span class="badge">Open Source</span></div>
+      </div>
+      <div class="project-card">
+        <h3 class="project-title">AI-Powered Code Review &amp; MR Orchestration</h3>
+        <p class="project-description">Built an event-driven platform providing automatic merge request summarization, on-demand code review, and codebase-wide change orchestration across 2,000+ repos.</p>
+        <div class="project-tags"><span class="badge">AWS Bedrock</span><span class="badge">Claude</span><span class="badge">SQS/DynamoDB</span><span class="badge">ECS/Fargate</span></div>
+      </div>
+      <div class="project-card">
+        <h3 class="project-title">Enterprise Copilot Customizations</h3>
+        <p class="project-description">Forked the public awesome-copilot repository for internal Claims use, rapidly adopted enterprise-wide. Published customizations for API Standards, Well-Architected patterns, and a manager prompt that auto-installs relevant customizations. Over 20 contributors.</p>
+        <div class="project-tags"><span class="badge">GitHub Copilot</span><span class="badge">AI-Assisted Development</span></div>
+      </div>
+      <div class="project-card">
+        <h3 class="project-title">Cross-Platform Event Monitoring</h3>
+        <p class="project-description">Developed an event-based monitoring solution spanning AWS and internal cloud platforms using Terraform and Python, providing real-time observability across heterogeneous environments.</p>
+        <div class="project-tags"><span class="badge">Python</span><span class="badge">AWS</span><span class="badge">Event-Driven</span></div>
+      </div>
+      <div class="project-card">
+        <h3 class="project-title">Claims API Ecosystem</h3>
+        <p class="project-description">Established and championed the Claims API Ecosystem, introducing governance, best practices, and an industry-standard rules engine for authorization and eligibility.</p>
+        <div class="project-tags"><span class="badge">API Design</span><span class="badge">Node.js</span><span class="badge">Governance</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-info"><p class="footer-name">Michael Lyons</p><p class="footer-role">Staff Technology Engineer</p></div>
+    </div>
+    <p class="footer-copy">Dark-mode first, R2 themed.</p>
+  </div>
+</footer>
+<script>const theme=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',theme);document.getElementById('theme-toggle')?.addEventListener('click',()=>{const next=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',next);localStorage.setItem('theme',next)})</script>
+</body>
+</html>
