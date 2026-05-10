@@ -1,20 +1,43 @@
 ---
 const experiences = [
   {
-    title: 'Senior Technology Engineer – ET Claims SRE',
+    title: 'Staff Technology Engineer',
     company: 'State Farm',
-    location: 'Atlanta, GA',
-    period: 'January 2021 – Current',
+    location: 'Lawrenceville, GA',
+    period: 'August 2024 – Current',
     highlights: [
       'Established team expectations and architectural standards for multi-region AWS deployments across the Claims organization',
       'Created, piloted, and released a production-grade Terraform module for enterprise consumption; published an open-source module for industry-wide adoption',
+      'Set vision and direction as a core member of the Tenant Visions and Architecture (TVA) team',
       'Coordinated organization-wide migration to SCALR, aligning multiple product teams and reducing operational overhead',
-      'Developed a cross-platform (AWS/TP2) event-based monitoring solution using Terraform and Python',
       'Rearchitected Claims Vault usage to increase security posture and adopt change management best practices',
       'Contributed the SSL Lambda Layer to PCAT for enterprise consumption',
-      'Set vision and direction as a core member of the Tenant Visions and Architecture (TVA) team',
       'Regularly mentor lead engineers; participated on P7 Software Engineer and P7 Infrastructure Engineer Promotion boards',
       'Selected for a special stability/reliability assignment for TP2 which averted a major platform incident',
+      'Presented at the 2022 and 2023 Resiliency Summits and other technical venues',
+    ],
+  },
+  {
+    title: 'Senior Technology Engineer – ET Claims SRE',
+    company: 'State Farm',
+    location: 'Atlanta, GA',
+    period: 'October 2021 – August 2024',
+    highlights: [
+      'SRE engineering with focus on AWS platform reliability, observability, and incident response for the Claims organization',
+      'Developed a cross-platform (AWS/TP2) event-based monitoring solution using Terraform and Python',
+      'Piloted AWS Deep Racer for automation experimentation',
+      'Coordinated production implementation across multiple teams for initial go-live rollout',
+      'Coached teams on AWS, Git, and product-team best practices',
+    ],
+  },
+  {
+    title: 'Technology Engineer – SRE Engineering',
+    company: 'State Farm',
+    location: 'Atlanta, GA',
+    period: 'January 2021 – October 2021',
+    highlights: [
+      'Transitioned into SRE engineering, applying site reliability principles to Claims platform operations',
+      'Established foundational monitoring, alerting, and incident response processes for AWS-based services',
     ],
   },
   {
@@ -26,14 +49,14 @@ const experiences = [
       'Led Hack Day ATL events in 2020 and 2021, fostering innovation and cross-team collaboration',
       'Implemented GitOps and Terraform Enterprise for production deployment pipelines',
       'Developed CloudWatch queries for monitoring and reporting needs',
-      'Coached teams on AWS, Git, and product-team best practices',
+      'Collaborated across organizational boundaries as part of the Cross-Claims API Tribe',
     ],
   },
   {
-    title: 'Lead Developer – Digital Claims',
+    title: 'Software Developer Technical Lead – Digital Claims',
     company: 'State Farm',
-    location: 'Bloomington, IL / Atlanta, GA',
-    period: 'October 2016 – March 2020',
+    location: 'Greater Atlanta, GA',
+    period: 'July 2018 – January 2021',
     highlights: [
       'Established and championed the Claims API Ecosystem, communicating methodologies to peers and leadership',
       'Introduced an industry-standard rules engine for authorization and eligibility automation',
@@ -44,14 +67,35 @@ const experiences = [
     ],
   },
   {
-    title: 'Solution Architect – Customer Communications',
+    title: 'Technical Architect',
     company: 'State Farm',
-    location: 'Bloomington, IL / Dallas, TX',
-    period: 'April 2012 – October 2016',
+    location: 'Various',
+    period: 'May 2001 – July 2018',
+    isSummary: true,
+    summary: 'Over a 17-year tenure, progressed through increasingly complex architecture and engineering roles across multiple platforms and business domains:',
     highlights: [
-      'Designed and implemented on-demand customer communications solution, increasing efficiency and integration speed',
-      'Applied learnings to optimize batch communications system for policy holder printed communications',
-      'Implemented a self-service, cookbook-style documentation system to empower consumers',
+      'Solution Architect – Customer Communications: Designed on-demand and batch communications solutions, increasing integration speed and efficiency',
+      'Lead Developer – Digital Claims: Established the Claims API Ecosystem and introduced industry-standard rules engine for authorization automation',
+      'Designed and delivered enterprise solutions across mainframe, WAS, and emerging cloud platforms',
+      'Built integration patterns for cross-platform data exchange and established development standards',
+    ],
+  },
+  {
+    title: 'Computer Programmer',
+    company: 'CSC (Computer Sciences Corporation)',
+    location: '',
+    period: 'March 1992 – July 1994',
+    highlights: [
+      'Developed and maintained enterprise software systems for government and commercial clients',
+    ],
+  },
+  {
+    title: 'Computer Programmer',
+    company: 'United States Air Force',
+    location: '',
+    period: 'October 1988 – March 1992',
+    highlights: [
+      'Developed and maintained mission-critical software systems supporting Air Force operations',
     ],
   },
 ];
@@ -61,15 +105,16 @@ const experiences = [
   <div class="container">
     <h2 class="section-title">Experience</h2>
     <div class="timeline">
-      {experiences.map((exp, i) => (
+      {experiences.map((exp) => (
         <div class="timeline-item">
           <div class="timeline-header">
             <div>
               <h3 class="timeline-role">{exp.title}</h3>
-              <p class="timeline-company">{exp.company} · {exp.location}</p>
+              <p class="timeline-company">{exp.company}{exp.location ? ` · ${exp.location}` : ''}</p>
             </div>
             <span class="timeline-period">{exp.period}</span>
           </div>
+          {exp.isSummary && <p class="timeline-summary">{exp.summary}</p>}
           <ul class="timeline-highlights">
             {exp.highlights.map((h) => <li>{h}</li>)}
           </ul>
@@ -146,6 +191,13 @@ const experiences = [
     font-family: var(--font-mono);
     font-size: 0.85rem;
     white-space: nowrap;
+  }
+
+  .timeline-summary {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 16px;
+    line-height: 1.6;
   }
 
   .timeline-highlights {
