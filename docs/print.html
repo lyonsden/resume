@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Lyons – Resume</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:10.5pt}
+body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1A1A1A;background:#F5F5F5;line-height:1.45;-webkit-font-smoothing:antialiased}
+.print-page{max-width:8.5in;margin:24px auto;background:#FFF;padding:0;box-shadow:0 1px 8px rgba(0,0,0,.1)}.print-content{padding:.6in .7in}
+hr{border:none;height:1px;background:#D0D0D0;margin:16px 0}
+.header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;flex-wrap:wrap;gap:6px}.header-name{font-size:20pt;font-weight:800;letter-spacing:-.5px;color:#000}.header-title{font-size:11pt;font-weight:500;color:#555;margin-top:2px}.header-contact{text-align:right;font-size:9pt;color:#555;line-height:1.5}
+.summary{font-size:9.5pt;color:#444;line-height:1.45;margin-bottom:18px;padding:10px 14px;background:#F8F8F8;border-left:3px solid #7BB342}
+.section-title{font-size:11.5pt;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#7BB342;margin-bottom:10px;padding-bottom:3px;border-bottom:1px solid #D0D0D0}
+.experience{margin-bottom:8px}.role{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:3px}.role-title{font-size:11pt;font-weight:700;color:#000}.role-company{font-size:9.5pt;color:#555}.role-date{font-size:9pt;color:#777;white-space:nowrap}.role-summary{font-size:9.5pt;color:#444;font-style:italic;margin:4px 0 6px 0}.highlights{margin:4px 0 14px 16px;list-style:none}.highlights li{position:relative;padding-left:13px;padding-bottom:4px;font-size:9.5pt;color:#333;line-height:1.4}.highlights li:last-child{padding-bottom:0}.highlights li::before{content:"•";position:absolute;left:0;color:#7BB342}
+.skills-grid{display:flex;flex-wrap:wrap;gap:5px 0;margin-bottom:12px}.skill-group{font-size:9.5pt;color:#333;margin-right:22px}.skill-group strong{font-size:8.5pt;text-transform:uppercase;letter-spacing:.5px;color:#555}.certs{margin-bottom:12px;font-size:9.5pt}.certs strong{font-size:8.5pt;text-transform:uppercase;letter-spacing:.5px;color:#555}
+.actions{text-align:center;padding:16px}.btn{display:inline-block;padding:10px 28px;background:#7BB342;color:#FFF;border:none;border-radius:4px;font-size:10pt;font-weight:600;cursor:pointer;text-decoration:none}.btn:hover{background:#6A9B38}
+@media print{body{background:#FFF}.print-page{max-width:100%;margin:0;box-shadow:none}.actions{display:none}.print-content{padding:.6in .7in}.highlights li{page-break-inside:avoid}.experience{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="print-page">
+  <div class="actions"><button class="btn" onclick="window.print()">Print / Save PDF</button></div>
+  <div class="print-content">
+    <div class="header">
+      <div>
+        <h1 class="header-name">Michael Lyons</h1>
+        <p class="header-title">Staff Technology Engineer</p>
+      </div>
+      <div class="header-contact">
+        michael@shadetreegeek.com<br>
+        309.750.9512<br>
+        <a href="https://www.linkedin.com/in/michael-lyons-chfc" target="_blank" rel="noopener" style="color:#555;text-decoration:underline">linkedin.com/in/michael-lyons-chfc</a>
+      </div>
+    </div>
+
+    <p class="summary">Designing and operating enterprise platforms at scale — from legacy to cloud-native to AI-first. AWS, infrastructure automation, event-driven systems, SRE, and LLM-driven platform engineering.</p>
+
+    <h2 class="section-title">Experience</h2>
+    <div class="experience">
+      <div class="role"><div><span class="role-title">Staff Technology Engineer</span><span class="role-company"> – State Farm, Atlanta, GA</span></div><span class="role-date">Aug 2024 – Present</span></div>
+      <ul class="highlights">
+        <li>Built an event-driven platform (SQS/DynamoDB/ECS-Fargate/Bedrock) providing automatic merge request summarization, on-demand code review, and codebase-wide change orchestration across 2,000+ repositories using Claude</li>
+        <li>Forked the public awesome-copilot repository for internal Claims use — rapidly adopted enterprise-wide. Published Copilot customizations for API Standards, Well-Architected patterns, and a manager prompt that auto-installs customizations based on the engineer's current project. Over 20 contributors have shared customizations</li>
+        <li>Established team expectations and architectural standards for multi-region AWS deployments across the Claims organization</li>
+        <li>Created, piloted, and released a production-grade Terraform module for enterprise consumption; published an open-source module for industry-wide adoption</li>
+        <li>Coordinated organization-wide migration to SCALR (Terraform management platform), aligning multiple product teams</li>
+        <li>Regularly mentor lead engineers; participated on P7 Software Engineer and Infrastructure Engineer Promotion boards</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <div class="role"><div><span class="role-title">Senior Technology Engineer – SRE</span><span class="role-company"> – State Farm, Atlanta, GA</span></div><span class="role-date">Jan 2021 – Aug 2024</span></div>
+      <ul class="highlights">
+        <li>SRE engineering with focus on AWS platform reliability, observability, and incident response for the Claims organization</li>
+        <li>Consolidated 20+ unique project pipelines into a single, standardized, high-performing pipeline</li>
+        <li>Established foundational monitoring, alerting, and incident response processes for AWS-based services</li>
+        <li>Presented at the 2022 and 2023 Resiliency Summits</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <div class="role"><div><span class="role-title">Lead Developer – Team Insomnia</span><span class="role-company"> – State Farm, Atlanta, GA</span></div><span class="role-date">Mar 2020 – Jan 2021</span></div>
+      <ul class="highlights">
+        <li>Developed a cross-platform event-based monitoring solution using Terraform and Python, enabling real-time observability across heterogeneous environments</li>
+        <li>Implemented GitOps and Terraform Enterprise for production deployment pipelines</li>
+        <li>Coached teams on AWS, Git, and product-team best practices</li>
+        <li>Led Hack Day ATL events (2020, 2021) and piloted AWS Deep Racer</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <div class="role"><div><span class="role-title">Software Developer Technical Lead – Digital Claims</span><span class="role-company"> – State Farm, Atlanta, GA</span></div><span class="role-date">Jul 2018 – Jan 2021</span></div>
+      <ul class="highlights">
+        <li>Championed the Claims API Ecosystem across the organization, establishing governance and best practices</li>
+        <li>Introduced an industry-standard rules engine for authorization and eligibility automation</li>
+        <li>Architected, developed, and implemented APIs within the Claims API Ecosystem</li>
+        <li>Migrated a high-traffic legacy Java API to a Node.js AWS API backed by DynamoDB</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <div class="role"><div><span class="role-title">Technical Architect / Lead Developer</span><span class="role-company"> – State Farm, Bloomington/Normal, IL</span></div><span class="role-date">May 2001 – Jul 2018</span></div>
+      <p class="role-summary">Over a 17-year tenure, progressed through increasingly complex architecture and engineering roles across multiple platforms and business domains.</p>
+      <ul class="highlights">
+        <li>Solution Architect – Customer Communications: Designed and implemented an on-demand customer communications solution, increasing efficiency and integration speed</li>
+        <li>Implemented a self-service, cookbook-style documentation system to empower consumers and reduce integration friction</li>
+        <li>Lead Developer – Digital Claims (2016–2018): Established the Claims API Ecosystem</li>
+        <li>Established development standards and mentored engineering teams through technology transitions</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group"><strong>Cloud:</strong> AWS (Lambda, SQS, ECS/Fargate, RDS, DynamoDB), Multi-region Architecture, Event-Driven Systems</div>
+      <div class="skill-group"><strong>Languages:</strong> Python, Node.js, Java, Go</div>
+      <div class="skill-group"><strong>AI/LLM:</strong> AWS Bedrock, Claude, LLM Workflows, GitHub Copilot</div>
+      <div class="skill-group"><strong>IaC:</strong> Terraform / TFE / Scalr, Docker</div>
+      <div class="skill-group"><strong>Platforms:</strong> GitLab CI, GitOps, CloudWatch, Dynatrace</div>
+      <div class="skill-group"><strong>Practices:</strong> SRE, DevSecOps, API Governance, Technical Leadership</div>
+    </div>
+
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs">AWS Cloud Practitioner &nbsp;·&nbsp; Chartered Financial Consultant (ChFC)</div>
+
+  </div>
+</div>
+<script>document.querySelector('.btn')?.addEventListener('click',()=>window.print())</script>
+</body>
+</html>
