@@ -6,7 +6,7 @@ Lawrenceville, GA
 
 ## Summary
 
-Staff Technology Engineer designing and operating enterprise platforms at scale — from legacy to cloud-native to AI-first. Deep expertise in AWS, infrastructure automation, event-driven systems, SRE, and LLM-driven platform engineering. Proven track record building self-service platform tooling, establishing API governance, and mentoring engineers. Passionate about AI-first engineering, DevSecOps, and solving complex enterprise integration challenges.
+Staff Technology Engineer designing and operating enterprise platforms at scale — from legacy to cloud-native to AI-first. **25 years at State Farm.** Deep expertise in AWS, infrastructure automation, event-driven systems, SRE, and LLM-driven platform engineering. Proven track record building self-service platform tooling, establishing API governance, and mentoring engineers. Passionate about AI-first engineering, DevSecOps, and solving complex enterprise integration challenges.
 
 ---
 
@@ -19,8 +19,10 @@ Staff Technology Engineer designing and operating enterprise platforms at scale 
 | Event-driven systems | Java | LLM Workflows | Infrastructure as Code |
 | Enterprise platform reliability | Go | GitHub Copilot | SRE & Resiliency |
 | | | AI-Orchestrated Automation | API Governance |
-| API ecosystem design & governance | PL/I | X-Ray, Dynatrace | Technical Leadership |
-| Security & compliance automation | COBOL | | AI-Assisted Development |
+| | PL/I | X-Ray, Dynatrace | Technical Leadership |
+| | COBOL | | AI-Assisted Development |
+| | | | API ecosystem design & governance |
+| | | | Security & compliance automation |
 
 ---
 
@@ -29,10 +31,11 @@ Staff Technology Engineer designing and operating enterprise platforms at scale 
 ### Staff Technology Engineer
 **State Farm** | Lawrenceville, GA | *August 2024 – Current*
 
-- **AI-First Platform Engineering:** Built an event-driven platform (SQS/DynamoDB/ECS-Fargate/Bedrock) providing automatic merge request summarization, on-demand code review, and codebase-wide change orchestration across 2,000+ repositories. Engineers request reviews or bulk updates via MR; the system generates complete merge requests for team review. Integrated Claude 4.6 for comprehensive code analysis from spelling to architecture.
+- **AI-First Platform Engineering:** Built an event-driven platform (SQS/DynamoDB/ECS-Fargate/Bedrock) providing automatic merge request summarization, on-demand code review, and codebase-wide change orchestration across 3,000+ repositories. Engineers request reviews or bulk updates via MR; the system generates complete merge requests for team review. Integrated Claude 4.6 for comprehensive code analysis from spelling to architecture.
 - **Enterprise Copilot Adoption:** Forked the public awesome-copilot repository for internal Claims use, rapidly adopted enterprise-wide. Published internal Copilot customizations for API Standards, Well-Architected patterns, and a manager prompt that auto-installs relevant customizations based on the engineer's current project. Over 20 contributors have shared customizations.
 - **Cloud-Native Platform Leadership:** Established team expectations and architectural standards for multi-region AWS deployments across the Claims organization, driving consistency and reliability at enterprise scale.
 - **Infrastructure as Code at Scale:** Created, piloted, and released a production-grade Terraform module for enterprise consumption; published an open-source module to the [StateFarmIns GitHub organization](https://github.com/StateFarmIns/terraform-aws-ip-address-release) for industry-wide adoption. Coordinated organization-wide migration to SCALR (Terraform management platform), aligning multiple product teams and reducing operational overhead.
+- **Developer Platform & Discovery:** Built a UI catalog exposing metadata for 3,000+ Claims projects, enabling self-service discovery, governance, and migration planning across the organization.
 - **Security & Compliance Automation:** Rearchitected Claims Vault usage to increase security posture and adopt change management best practices. Contributed the SSL Lambda Layer to the enterprise cloud adoption team for organization-wide consumption.
 - **Performance Optimization & Cost Reduction:** Significantly reduced Claims traffic to Vault by communicating best practices to product teams. Matured platform architecture to increase performance and decrease infrastructure costs.
 - **Technical Leadership & Mentorship:** Regularly mentor lead engineers across the organization. Participated on the P7 Software Engineer and P7 Infrastructure Engineer Promotion boards. Selected for a special stability/reliability assignment which averted a major platform incident.
@@ -89,7 +92,19 @@ Over a 17-year tenure, progressed through increasingly complex architecture and 
 ## Certifications
 
 - AWS Cloud Practitioner
-- Chartered Financial Consultant (ChFC) — The American College of Financial Services (2017)
+
+---
+
+## Notable Projects
+
+| Project | Description | Technologies |
+|---------|-------------|--------------|
+| Open-Source Terraform Module | Published production-grade module to StateFarmIns GitHub for industry-wide adoption | Terraform, IaC, Open Source |
+| AI-Powered Code Review & MR Orchestration | Event-driven platform for automatic MR summarization, on-demand code review, and change orchestration across 3,000+ repos | AWS Bedrock, Claude, SQS, DynamoDB, ECS/Fargate |
+| Enterprise Copilot Customizations | Forked awesome-copilot for internal use; published customizations for API Standards, Well-Architected patterns; 20+ contributors | GitHub Copilot, AI-Assisted Development |
+| Claims Project UI Catalog | Metadata catalog for 3,000+ Claims projects enabling self-service discovery, governance, and migration planning | Platform Engineering, Developer Experience, Metadata, Governance |
+| Claims API Ecosystem | Established API governance, best practices, and rules engine for authorization/eligibility | API Design, Node.js, Governance |
+| Cross-Platform Event Monitoring | Event-based monitoring spanning AWS and internal cloud platforms | Python, AWS, Event-Driven |
 
 ---
 
